@@ -32,6 +32,10 @@ cd ~/dotfiles
 ![swappy-20250610-210749](https://github.com/user-attachments/assets/035f6967-67da-41b4-983c-4fdf5c2fe66b)
 
 ### Neovide/Neovim
+
+>[!NOTE]
+> I'm using astronvim for my neovim, the greeting Dashboard should be in user.lua , rest of the plugins are installed in default manner
+
 ![swappy-20250622-055446](https://github.com/user-attachments/assets/eef420fb-a76d-4eb5-b174-6415d4a35263)
 ![swappy-20250622-055431](https://github.com/user-attachments/assets/37019dc4-ead5-4e0a-94af-dac44b2daccb)
 ![swappy-20250622-064045](https://github.com/user-attachments/assets/51a9c907-3592-472c-8221-115824dab771)
