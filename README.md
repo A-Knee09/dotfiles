@@ -40,7 +40,12 @@ cd ~/dotfiles
 ![swappy-20250622-055431](https://github.com/user-attachments/assets/37019dc4-ead5-4e0a-94af-dac44b2daccb)
 ![swappy-20250622-064045](https://github.com/user-attachments/assets/51a9c907-3592-472c-8221-115824dab771)
 
-### 5.Hyprlock and Power Screen
+### 5.Nemo (File Manager)
+
+![swappy-20250622-073724](https://github.com/user-attachments/assets/182a095d-53b3-42e8-bd46-368cd57c9ab5)
+
+
+### 6.Hyprlock and Power Screen
 ![swappy-20250622-062232](https://github.com/user-attachments/assets/b7a6ed94-f58f-4315-b279-8d2d25b2a660)
 ![swappy-20250622-062751](https://github.com/user-attachments/assets/df608400-6429-4d3e-a04e-9cbc965139b3)
 
