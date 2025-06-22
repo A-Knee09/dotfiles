@@ -2,10 +2,17 @@
 
 Minimal and clean Arch Linux rice using Hyprland script from [Jakoolit](https://github.com/JaKooLit/Arch-Hyprland)
 
-> Featuring Hyprland + Waybar + Rofi + Kitty + Hyprlock + Swappy  
-> Powered by Catppuccin Macchiato and JetBrains Mono
+Featuring Hyprland + Waybar + Rofi + Kitty + Hyprlock + Swappy  
+Powered by Catppuccin Macchiato and JetBrains Mono
 
----
+# Usage
+
+```bash
+git clone https://github.com/A-Knee09/dotfiles.git ~/dotfiles
+cd ~/dotfiles
+```
+>[!IMPORTANT]
+> Make sure you create a backup of your existing configs first before replacing them 
 
 ## 🌄 Screenshots
 
@@ -33,7 +40,6 @@ Minimal and clean Arch Linux rice using Hyprland script from [Jakoolit](https://
 ![swappy-20250622-062232](https://github.com/user-attachments/assets/b7a6ed94-f58f-4315-b279-8d2d25b2a660)
 ![swappy-20250622-062751](https://github.com/user-attachments/assets/df608400-6429-4d3e-a04e-9cbc965139b3)
 
----
 
 ## Included Configs
 
@@ -48,7 +54,6 @@ All configs live under `.config/` and are modular:
 - **Wallust** – wallpaper & theme sync
 - **Cava**, **Fastfetch**, **Ranger**, **Lazygit**, **Swappy**
 
----
 
 ## System Info
 
@@ -64,11 +69,3 @@ All configs live under `.config/` and are modular:
 
 ---
 
-## Usage
-
-```bash
-git clone https://github.com/A-Knee09/dotfiles.git ~/dotfiles
-cd ~/dotfiles
-```
->[!IMPORTANT]
-> Make sure you create a backup of your existing configs first before replacing them 
