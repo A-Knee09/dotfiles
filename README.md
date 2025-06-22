@@ -1,4 +1,4 @@
-# 🛠️ A Knee's Dotfiles
+# A Knee's Dotfiles
 
 Minimal and clean Arch Linux rice using Hyprland script from [Jakoolit](https://github.com/JaKooLit/Arch-Hyprland)
 
@@ -14,7 +14,7 @@ cd ~/dotfiles
 >[!IMPORTANT]
 > Make sure you create a backup of your existing configs first before replacing them 
 
-## 🌄 Screenshots
+## Screenshots
 
 ### 1.Desktop
 ![swappy-20250622-062435](https://github.com/user-attachments/assets/4b37d7a4-831f-4d39-8d1a-d48bbd64d710)
