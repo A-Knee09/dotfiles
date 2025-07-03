@@ -53,7 +53,8 @@ https://github.com/user-attachments/assets/f231f241-5a74-4992-9f8c-c749aa072875
 
 
 ## 6.Hyprlock and Power Screen
-![swappy-20250622-062232](https://github.com/user-attachments/assets/b7a6ed94-f58f-4315-b279-8d2d25b2a660)
+![Hyprlock](https://github.com/user-attachments/assets/ad843203-9bd7-4bb5-8062-61d028800841)
+
 ![swappy-20250622-062751](https://github.com/user-attachments/assets/df608400-6429-4d3e-a04e-9cbc965139b3)
 
 
