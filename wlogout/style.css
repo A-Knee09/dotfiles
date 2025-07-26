@@ -6,8 +6,9 @@
 
 window {
     font-size: 24pt;
-    color: @foreground; /* text */
-    background-color: rgba(38, 38,38, 0.5);
+    color: @foreground;
+    /* text */
+    background-color: rgba(38, 38, 38, 0.5);
 }
 
 button {
@@ -18,35 +19,38 @@ button {
     animation: gradient_f 10s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
     border-radius: 10px;
-	border:0px;
-	outline-style: none;
+    border: 0px;
+    outline-style: none;
 }
 
 button:focus {
     background-size: 50%;
-	border: 0px;
-	outline-style: none;
+    border: 0px;
+    outline-style: none;
 }
 
 button:hover {
-    background-color:#c3c6c9;
-    color: @color13;
+    background-color: #ffffff;
+    color: #000000;
     background-size: 50%;
-    margin: 30px;
+    margin: 60px;
     border-radius: 10px;
     outline-style: none;
-	
+
+
 }
 
 /* Adjust the size of the icon or content inside the button */
 button span {
-    font-size: 1.2em; /* Increase the font size */
+    font-size: 1.2em;
+    /* Increase the font size */
 }
 
 
 #lock {
     background-image: image(url("./icons/lock.png"));
 }
+
 #lock:hover {
     background-image: image(url("./icons/lock-hover.png"));
 }
@@ -54,6 +58,7 @@ button span {
 #logout {
     background-image: image(url("./icons/logout.png"));
 }
+
 #logout:hover {
     background-image: image(url("./icons/logout-hover.png"));
 }
@@ -61,6 +66,7 @@ button span {
 #suspend {
     background-image: image(url("./icons/sleep.png"));
 }
+
 #suspend:hover {
     background-image: image(url("./icons/sleep-hover.png"));
 }
@@ -68,6 +74,7 @@ button span {
 #shutdown {
     background-image: image(url("./icons/power.png"));
 }
+
 #shutdown:hover {
     background-image: image(url("./icons/power-hover.png"));
 }
@@ -75,6 +82,7 @@ button span {
 #reboot {
     background-image: image(url("./icons/restart.png"));
 }
+
 #reboot:hover {
     background-image: image(url("./icons/restart-hover.png"));
 }
@@ -82,6 +90,7 @@ button span {
 #hibernate {
     background-image: image(url("./icons/hibernate.png"));
 }
+
 #hibernate:hover {
     background-image: image(url("./icons/hibernate-hover.png"));
 }
