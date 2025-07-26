@@ -5,6 +5,9 @@ Minimal and clean Arch Linux rice using Hyprland script from [Jakoolit](https://
 Featuring Hyprland + Waybar + Rofi + Kitty + Hyprlock + Swappy  
 Powered by Catppuccin Macchiato and JetBrains Mono
 
+>[!NOTE]
+>The config has been updated but there are backup files within the config for older version
+
 # Usage
 
 ```bash
@@ -53,8 +56,9 @@ https://github.com/user-attachments/assets/f231f241-5a74-4992-9f8c-c749aa072875
 
 
 ## 6.Hyprlock and Power Screen
-![swappy-20250622-062232](https://github.com/user-attachments/assets/b7a6ed94-f58f-4315-b279-8d2d25b2a660)
-![swappy-20250622-062751](https://github.com/user-attachments/assets/df608400-6429-4d3e-a04e-9cbc965139b3)
+<img width="1920" height="1080" alt="vlcsnap-2025-07-26-14h27m41s666" src="https://github.com/user-attachments/assets/6fcfb53f-b6c8-4d6d-bc91-3de0a6d42b53" />
+
+<img width="1920" height="1080" alt="vlcsnap-2025-07-26-14h32m01s876" src="https://github.com/user-attachments/assets/c6d42ce1-d220-49e4-a00a-4e41a4ceebcc" />
 
 
 # Included Configs
