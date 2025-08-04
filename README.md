@@ -29,8 +29,9 @@ https://github.com/user-attachments/assets/f231f241-5a74-4992-9f8c-c749aa072875
 >[!NOTE]
 >You'll need mpvpaper for enabling live wallpapers. However when using live wallpapers, for obvious reason waybar and rofi colors won't be synced to your live wallpaper.
 
-## 2.Terminal 
+## 2.Terminal with Fastfetch and Ranger 
 ![swappy-20250619-083134](https://github.com/user-attachments/assets/434e0513-a13d-456f-ad6f-9c380ecacc76)
+![1000104272](https://github.com/user-attachments/assets/996cda51-d184-4124-a0e0-dc5e01248f95)
 > [!NOTE]
 > The fastfetch config has a profiles directory which consists of image assets used for zsh terminal and fastfetch, feel free to replace them in `config.jsonc` for fastfetch and `config-compat.jsonc` for zsh terminal
 
