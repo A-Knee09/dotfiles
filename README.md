@@ -15,9 +15,8 @@ git clone https://github.com/A-Knee09/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ```
 >[!IMPORTANT]
-> - Make sure you create a backup of your existing configs first before replacing them
-> - If you are using [Jakoolit Hyprland script](https://github.com/JaKooLit/Arch-Hyprland) already you can copy paste these files, however backup is still recommended.
-> - If you have your own independent rice, you'll need to tweak some configs. For example the rofi and waybar ones use wallust for color sync with wallpaper, whereas some configs like kitty can be directly pasted.
+> - Use these files only as a reference for your own configs. DO NOT COPY PASTE THEM DIRECTLY
+> - The orignal script belongs to [Jakoolit](https://github.com/JaKooLit/Arch-Hyprland). If you have the script already, copy pasting lines where imports are'nt required should work
 
 # Screenshots
 
