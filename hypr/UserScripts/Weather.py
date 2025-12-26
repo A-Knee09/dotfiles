@@ -24,18 +24,19 @@ weather_icons = {
 
 
 # Get current location based on IP address
-def get_location():
-    response = requests.get("https://ipinfo.io")
-    data = response.json()
-    loc = data["loc"].split(",")
-    return float(loc[0]), float(loc[1])
-
-
-# Get latitude and longitude
-latitude, longitude = get_location()
+# def get_location():
+#     response = requests.get("https://ipinfo.io")
+#     data = response.json()
+#     loc = data["loc"].split(",")
+#     return float(loc[0]), float(loc[1])
+#
+#
+# # Get latitude and longitude
+# latitude, longitude = get_location()
 
 # Open-Meteo API endpoint
-url = f"https://weather.com/en-PH/weather/today/l/{latitude},{longitude}"
+location_id = "d2d4fb1dce88bd25f7764e911febdde1bf6f3df68da05e22c33dab83bed839cd"
+url = f"https://weather.com/en-PH/weather/today/l/{location_id}"
 
 # manual location_id
 # NOTE: if you want to add manually, make sure you disable def get_location above
@@ -59,8 +60,24 @@ status = html_data("div[data-testid='wxPhrase']").text()
 status = f"{status[:16]}.." if len(status) > 17 else status
 
 # status code
-status_code = html_data("#regionHeader").attr("class").split(" ")[2].split("-")[2]
+# try to infer status_code from status text
+status_code_map = {
+    "Sunny": "sunnyDay",
+    "Clear": "clearNight",
+    "Cloudy": "cloudyFoggyDay",
+    "Fog": "cloudyFoggyDay",
+    "Rain": "rainyDay",
+    "Showers": "rainyDay",
+    "Snow": "snowyIcyDay",
+    "Thunderstorm": "severe",
+}
 
+status_lower = status.lower()
+status_code = "default"
+for key, value in status_code_map.items():
+    if key.lower() in status_lower:
+        status_code = value
+        break
 # status icon
 icon = (
     weather_icons[status_code]

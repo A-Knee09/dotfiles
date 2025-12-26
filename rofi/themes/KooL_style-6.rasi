@@ -42,7 +42,7 @@ window {
     cursor:                     "default";
     spacing:                    0px;
     border:                     2px;
-    border-radius:              30px;
+    border-radius:              3px;
     location:                   center;
     anchor:                     center;
 
@@ -56,7 +56,7 @@ mainbox {
     enabled:                     true;
     orientation:                 vertical;
     children:                    [ "inputbar", "listbox" ];
-    background-color:            transparent;
+    background-color:            black;
 }
 
 
@@ -66,7 +66,7 @@ inputbar {
     padding:                     10px 10px 150px 10px;
     margin:                      10px;
     background-color:            transparent;
-    border-radius:               25px;
+    border-radius:               2px;
     orientation:                 horizontal;
     children:                    ["entry", "dummy", "mode-switcher" ];
     background-image:            url("~/.config/rofi/.current_wallpaper", width);

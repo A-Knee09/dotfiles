@@ -15,7 +15,7 @@ iDIR="$HOME/.config/swaync/images"
 iDIRi="$HOME/.config/swaync/icons"
 
 # swww transition config
-FPS=120
+FPS=164
 TYPE="wipe"
 DURATION=2
 BEZIER=".43,1.19,1,.4"
@@ -131,11 +131,8 @@ if [[ -n "$choice" ]]; then
     exit 1
     fi
 
-      # Open terminal and set the wallpaper
-    $terminal -e bash -c "echo 'Enter your password to set wallpaper as SDDM Background'; \
-    sudo cp -r $wallpaper_output '$sddm_simple/Backgrounds/default' && \
-    notify-send -i '$iDIR/ja.png' 'SDDM' 'Background SET'"
+	exec $SCRIPTSDIR/sddm_wallpaper.sh --effects
+    
     fi
   fi
 fi
-

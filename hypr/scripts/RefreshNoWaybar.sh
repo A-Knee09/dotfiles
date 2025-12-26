@@ -26,10 +26,14 @@ for _prs in "${_ps[@]}"; do
 done
 
 # quit ags & relaunch ags
-ags -q && ags &
+#ags -q && ags &
 
-# Wallust refresh
-${SCRIPTSDIR}/WallustSwww.sh &
+# quit quickshell & relaunch quickshell
+#pkill qs && qs &
+
+# Wallust refresh (synchronous to ensure colors are ready)
+${SCRIPTSDIR}/WallustSwww.sh
+sleep 0.2
 
 # reload swaync
 swaync-client --reload-config

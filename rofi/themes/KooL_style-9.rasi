@@ -41,7 +41,7 @@ window {
     text-color:                     @FG;
     border:                         2px;
     border-color:                   @BDR;
-    border-radius:                  10px;
+    border-radius:                  5px;
     width:                          25%;
     anchor:                         center;
     x-offset:                       0;
@@ -70,7 +70,7 @@ entry {
     placeholder-color:              @FG;
     expand:                         true;
     horizontal-align:               0;
-    placeholder:                    "Search     👀 NOTE: CTRL TAB to change MODE";
+    placeholder:                    "Search";
     blink:                          true;
     border:                  	    0px 0px 2px 0px;
     border-color:                   @BDR;

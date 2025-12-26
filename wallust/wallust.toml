@@ -23,7 +23,7 @@ color_space = "labmixed"
 #  * softdark16  - softdark with 16 color variation
 #  * softlight   - Light with soft pastel colors, counterpart of `harddark`
 #  * softlight16 - softlight with 16 color variation
-palette = "dark16"
+palette = "dark"
 
 # Difference between similar colors, used by the colorspace:
 #  1          Not perceptible by human eyes.
@@ -31,6 +31,7 @@ palette = "dark16"
 #  2 - 10     Perceptible at a glance.
 #  11 - 49    Colors are more similar than opposite
 #  100        Colors are exact opposite
+check_contrast=true
 threshold = 11
 
 [templates]
@@ -48,6 +49,9 @@ waybar.target = '~/.config/waybar/wallust/colors-waybar.css'
 
 kitty.template = 'colors-kitty.conf'
 kitty.target = '~/.config/kitty/kitty-themes/01-Wallust.conf'
+
+quickshell.template = 'qml_color.json'
+quickshell.target = '~/.config/quickshell/qml_color.json'
 
 #swaync.template = 'colors-swaync.css'
 #swaync.target = '~/.config/swaync/wallust/colors-wallust.css'

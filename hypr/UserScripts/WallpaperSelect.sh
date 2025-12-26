@@ -13,9 +13,9 @@ iDIR="$HOME/.config/swaync/images"
 iDIRi="$HOME/.config/swaync/icons"
 
 # swww transition config
-FPS=120
+FPS=164
 TYPE="any"
-DURATION=2.5
+DURATION=2
 BEZIER=".43,1.19,1,.4"
 SWWW_PARAMS="--transition-fps $FPS --transition-type $TYPE --transition-duration $DURATION --transition-bezier $BEZIER"
 
@@ -123,11 +123,9 @@ set_sddm_wallpaper() {
         notify-send -i "$iDIR/error.png" "Missing $terminal" "Install $terminal to enable setting of wallpaper background"
         exit 1
       fi
-
-      # Open terminal to enter password
-      $terminal -e bash -c "echo 'Enter your password to set wallpaper as SDDM Background'; \
-            sudo cp -r $wallpaper_current '$sddm_simple/Backgrounds/default' && \
-            notify-send -i '$iDIR/ja.png' 'SDDM' 'Background SET'"
+	  
+	  exec $SCRIPTSDIR/sddm_wallpaper.sh --normal
+    
     fi
   fi
 }
@@ -170,8 +168,8 @@ apply_image_wallpaper() {
 
   swww img -o "$focused_monitor" "$image_path" $SWWW_PARAMS --resize fit
 
-  # Run additional scripts
-  "$SCRIPTSDIR/WallustSwww.sh"
+  # Run additional scripts (pass the image path to avoid cache race conditions)
+  "$SCRIPTSDIR/WallustSwww.sh" "$image_path"
   sleep 2
   "$SCRIPTSDIR/Refresh.sh"
   sleep 1
