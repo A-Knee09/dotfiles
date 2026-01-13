@@ -9,12 +9,29 @@ return {
 			styles = {
 				input = {
 					keys = {
-						n_esc = { "<C-c>", { "cmp_close", "cancel" }, mode = "n", expr = true },
-						i_esc = { "<C-c>", { "cmp_close", "stopinsert" }, mode = "i", expr = true },
+						n_esc = { "<C-c>", "cancel", mode = "n" },
+						i_esc = { "<C-c>", "stopinsert", mode = "i" },
 					},
 				},
 			},
 			-- Snacks Modules
+			indent = {
+				animate = {
+					enabled = vim.fn.has("nvim-0.10") == 1,
+					style = "out",
+					easing = "linear",
+					duration = {
+						step = 20, -- ms per step
+						total = 1500, -- maximum duration
+					},
+				},
+			},
+			terminal = {
+				win = {
+					position = "float",
+					border = "single",
+				},
+			},
 			input = {
 				enabled = true,
 			},
@@ -112,6 +129,24 @@ return {
 							},
 						},
 					},
+
+					dropdown = {
+						preview = true,
+						layout = {
+							backdrop = false,
+							width = 0.6,
+							min_width = 80,
+							height = 0.4,
+							min_height = 10,
+							box = "vertical",
+							border = "none",
+							title = "{title}",
+							title_pos = "center",
+							{ win = "input", title = "Search", title_pos = "left", height = 1, border = "single" },
+							{ win = "list", height = 5, border = "single" },
+							{ win = "preview", title = "{preview}", height = 7, border = "single" },
+						},
+					},
 				},
 			},
 			image = {
@@ -146,22 +181,21 @@ return {
 			},
 			dashboard = {
 				enabled = true,
-                preset = {
-                    header = table.concat({
+				preset = {
+					header = table.concat({
 
-							"██╗  ██╗██╗    ████████╗██╗    ██╗██╗███╗   ██╗",
-							"██║  ██║██║    ╚══██╔══╝██║    ██║██║████╗  ██║",
-							"███████║██║       ██║   ██║ █╗ ██║██║██╔██╗ ██║",
-							"██╔══██║██║       ██║   ██║███╗██║██║██║╚██╗██║",
-							"██║  ██║██║       ██║   ╚███╔███╔╝██║██║ ╚████║",
-							"╚═╝  ╚═╝╚═╝       ╚═╝    ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝",
-                            "",
-                            "",
-
-                    },"\n"),
-                },
+						"██╗  ██╗██╗    ████████╗██╗    ██╗██╗███╗   ██╗",
+						"██║  ██║██║    ╚══██╔══╝██║    ██║██║████╗  ██║",
+						"███████║██║       ██║   ██║ █╗ ██║██║██╔██╗ ██║",
+						"██╔══██║██║       ██║   ██║███╗██║██║██║╚██╗██║",
+						"██║  ██║██║       ██║   ╚███╔███╔╝██║██║ ╚████║",
+						"╚═╝  ╚═╝╚═╝       ╚═╝    ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝",
+						"",
+						"",
+					}, "\n"),
+				},
 				sections = {
-					{section = "header", padding = 2,},
+					{ section = "header", padding = 2 },
 					{ section = "keys", gap = 1, padding = 1 },
 					{ section = "startup", gap = 2, padding = 2 },
 					{
@@ -171,14 +205,29 @@ return {
 						pane = 2,
 						indent = 15,
 						height = 30,
-                        width = 60,
-                        border = true
+						width = 60,
+						border = true,
 					},
 				},
 			},
 		},
 		-- NOTE: Keymaps
 		keys = {
+			-- terminal
+			{
+				"<leader>ft",
+				function()
+					require("snacks").terminal()
+				end,
+				desc = "Toggle Terminal",
+			},
+			{
+				"<leader>oc",
+				function()
+					require("snacks").terminal.toggle("opencode")
+				end,
+				desc = "Toggle OpenCode",
+			},
 			{
 				"<leader>lg",
 				function()
@@ -241,16 +290,23 @@ return {
 			{
 				"<leader>fk",
 				function()
-					require("snacks").picker.keymaps({ layout = "ivy" })
+					require("snacks").picker.keymaps({ layout = "dropdown" })
 				end,
 				desc = "Search Keymaps (Snacks Picker)",
 			},
 
 			-- Other Utils
 			{
+				"<leader>h",
+				function()
+					require("snacks").dashboard()
+				end,
+				desc = "Go to dashboard",
+			},
+			{
 				"<leader>th",
 				function()
-					require("snacks").picker.colorschemes({ layout = "ivy" })
+					require("snacks").picker.colorschemes({ layout = "dropdown" })
 				end,
 				desc = "Pick Color Schemes",
 			},

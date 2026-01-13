@@ -15,16 +15,18 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.smartindent = true
-vim.opt.wrap = true 
+vim.opt.breakindent = true
+vim.opt.wrap = true
+vim.opt.linebreak = true
 
 -- Always hard wrap at 80 characters in every file
-vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
-    callback = function()
-        vim.opt_local.textwidth = 80
-        vim.opt_local.formatoptions:append("t") -- wrap text
-        vim.opt_local.smartindent = false
-    end,
-})
+-- vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+--     callback = function()
+--         vim.opt_local.textwidth = 80
+--         vim.opt_local.formatoptions:append("t") -- wrap text
+--         vim.opt_local.smartindent = false
+--     end,
+-- })
 
 -- backup and undo
 vim.opt.swapfile = false
@@ -51,9 +53,9 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 
 -- misc
-vim.opt.guicursor = 'n-v-c:block,i-ci-ve:ver25-blinkwait700-blinkoff400-blinkon250'
+vim.opt.guicursor = "n-v-c:block,i-ci-ve:ver25-blinkwait700-blinkoff400-blinkon250"
 vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
-vim.opt.colorcolumn = "80"
+--vim.opt.colorcolumn = "80"
 vim.opt.clipboard:append("unnamedplus")
 vim.opt.mouse = "a"
