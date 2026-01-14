@@ -44,11 +44,15 @@ https://github.com/user-attachments/assets/f231f241-5a74-4992-9f8c-c749aa072875
 ## Neovide/Neovim
 
 >[!NOTE]
-> I'm using astronvim for my neovim, the greeting Dashboard should be in user.lua , rest of the plugins are installed in default manner
+> Old config was astronivm, you can find it in nvim-bak
 
-![swappy-20250622-055446](https://github.com/user-attachments/assets/eef420fb-a76d-4eb5-b174-6415d4a35263)
-![swappy-20250622-055431](https://github.com/user-attachments/assets/37019dc4-ead5-4e0a-94af-dac44b2daccb)
+<img width="1920" height="1048" alt="swappy-20260114-161818" src="https://github.com/user-attachments/assets/9c8c0aed-57a8-4089-9652-ac3d23a945bd" />
+
 ![swappy-20250622-064045](https://github.com/user-attachments/assets/51a9c907-3592-472c-8221-115824dab771)
+
+### ASTRO Nvim [Prev Config]
+![swappy-20250622-055431](https://github.com/user-attachments/assets/37019dc4-ead5-4e0a-94af-dac44b2daccb)
+
 
 ## 5.Nemo (File Manager)
 
