@@ -1,0 +1,19 @@
+local M = {}
+
+M.base46 = {
+	theme = "rosepine",
+	transparency = true,
+}
+
+M.ui = {
+	statusline = {
+		enabled = false,
+		theme = "minimal",
+		separator_style = "block",
+	},
+	tabufline = {
+		enabled = false,
+	},
+}
+
+return M

@@ -1,0 +1,24 @@
+return {
+	{
+		"nvchad/base46",
+		lazy = false, -- Must not be lazy!
+		priority = 1000,
+		build = function()
+			require("base46").load_all_highlights()
+		end,
+	},
+	{
+		"nvchad/ui",
+		lazy = false,
+		priority = 999,
+		dependencies = { "nvchad/base46" },
+		config = function()
+			require("nvchad")
+		end,
+	},
+	-- Volt - Required for the modern theme picker!
+	{
+		"nvchad/volt",
+		lazy = true,
+	},
+}
